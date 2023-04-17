@@ -149,11 +149,7 @@ class HassTabsSubpage extends LitElement {
       <div class="toolbar">
         ${this.mainPage || (!this.backPath && history.state?.root)
           ? html`
-              <ha-menu-button
-                .hassio=${this.supervisor}
-                .hass=${this.hass}
-                .narrow=${this.narrow}
-              ></ha-menu-button>
+              
             `
           : this.backPath
           ? html`
