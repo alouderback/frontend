@@ -37,11 +37,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Download translations
-        run: ./script/translations_download
-        env:
-          LOKALISE_TOKEN: ${{ secrets.LOKALISE_TOKEN }}
-
       - name: Bump version
         run: script/version_bump.cjs nightly
 
